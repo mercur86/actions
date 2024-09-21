@@ -12,3 +12,9 @@ jobs:
     steps:
     - name: step1-job2
       run: echo "hola mundo-job2"
+  job3:
+    runs-on: ubuntu-latest
+    needs: [job2]
+    steps:
+    - name: step1-job2
+      run: echo "hola mundo-job2"
