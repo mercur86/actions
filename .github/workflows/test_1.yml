@@ -24,3 +24,9 @@ jobs:
       run: |
         touch primero.txt
         echo "hola primero" >> primero.txt
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: ls
+      run: |
+        chmod +x script.sh
+        ./script.sh
