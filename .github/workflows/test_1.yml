@@ -2,8 +2,13 @@ name: Hola Mundo
 on:
   - push
 jobs:
-  hola:
+  job1:
     runs-on: ubuntu-latest
     steps:
-    - name: hola mundo
-      run: echo "hola mundo"
+    - name: step1-job1
+      run: echo "hola mundo-job1"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step1-job2
+      run: echo "hola mundo-job2"
