@@ -2,7 +2,7 @@ name: Hola Mundo
 on : [push]
 jobs:
   hola:
-    runs-on:windows-11
+    runs-on: ubuntu-lasted
   steps:
   -name: hola mundo
   run: echo "hola mundo"
