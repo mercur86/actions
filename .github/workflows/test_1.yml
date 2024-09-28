@@ -30,3 +30,13 @@ jobs:
       run: |
         chmod +x script.sh
         ./script.sh
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: "23.20.200.57"
+        username: "ec2-user"
+        key: ${{ secrets.SSHKEY }}
+        port: 22
+        script: | 
+          ls
+        
